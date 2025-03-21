@@ -104,7 +104,7 @@ export default {
       name: this.newReservation.name,
       start: startDateTime,
       end: endDateTime,
-      status: 'myReservation'  // Añadir el estado aquí
+
     };
 
     this.reservations.push(reservation);
@@ -113,8 +113,7 @@ export default {
       content: reservation.name,
       start: startDateTime,
       end: endDateTime,
-      className: this.getStatusClass(reservation.status),  // Usar una función para obtener la clase según el estado
-      title: this.getStatusTitle(reservation.status),  // Título con el estado (opcional)
+
     });
 
     // Guardar en localStorage
